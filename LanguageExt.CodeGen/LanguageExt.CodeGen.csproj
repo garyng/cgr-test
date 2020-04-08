@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Sdk Name="CodeGeneration.Roslyn.PluginMetapackage.Sdk" Version="0.7.57-alpha" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.0</TargetFramework>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../LanguageExt.CodeGen.Attributes/LanguageExt.CodeGen.Attributes.csproj" />
+    <NupkgAdditionalDependency Include="LanguageExt.CodeGen.Generators" IncludeAssets="all" />
+  </ItemGroup>
+
+</Project>
